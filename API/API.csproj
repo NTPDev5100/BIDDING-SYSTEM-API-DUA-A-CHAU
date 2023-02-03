@@ -1,0 +1,72 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>E:\acpAPI\ACP\API\API.xml</DocumentationFile>
+    <NoWarn>1701;1702;1591</NoWarn>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\ContactCustomer\**" />
+    <Compile Remove="Controllers\Project\**" />
+    <Compile Remove="Controllers\WebHooks\**" />
+    <Compile Remove="wwwroot\**" />
+    <Content Remove="Controllers\ContactCustomer\**" />
+    <Content Remove="Controllers\Project\**" />
+    <Content Remove="Controllers\WebHooks\**" />
+    <Content Remove="wwwroot\**" />
+    <EmbeddedResource Remove="Controllers\ContactCustomer\**" />
+    <EmbeddedResource Remove="Controllers\Project\**" />
+    <EmbeddedResource Remove="Controllers\WebHooks\**" />
+    <EmbeddedResource Remove="wwwroot\**" />
+    <None Remove="Controllers\ContactCustomer\**" />
+    <None Remove="Controllers\Project\**" />
+    <None Remove="Controllers\WebHooks\**" />
+    <None Remove="wwwroot\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\Catalogue\CommodityTypeController.cs" />
+    <Compile Remove="Controllers\Catalogue\ProjectTypeController.cs" />
+    <Compile Remove="Controllers\Catalogue\RequestTypesController.cs" />
+    <Compile Remove="Controllers\Catalogue\ServiceTypeController.cs" />
+    <Compile Remove="Controllers\Catalogue\SourceTypesController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Hangfire" Version="1.8.0-rc1" />
+    <PackageReference Include="Hangfire.AspNetCore" Version="1.8.0-rc1" />
+    <PackageReference Include="Hangfire.Core" Version="1.8.0-rc1" />
+    <PackageReference Include="Hangfire.SqlServer" Version="1.8.0-rc1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.13" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.13">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Serilog" Version="2.10.0" />
+    <PackageReference Include="Serilog.Extensions.Logging" Version="3.1.0" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="3.3.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.2.3" />
+    <PackageReference Include="Wangkanai.Detection" Version="5.7.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AppDbContext\AppDbContext.csproj" />
+    <ProjectReference Include="..\BaseAPI\BaseAPI.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="FileLog\" />
+    <Folder Include="Upload\QRCode\" />
+  </ItemGroup>
+
+</Project>

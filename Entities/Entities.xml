@@ -1,0 +1,666 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Entities</name>
+    </assembly>
+    <members>
+        <member name="P:Entities.Catalogue.tbl_Menu.Icon">
+            <summary>
+            Icon của menu
+            </summary>
+        </member>
+        <member name="P:Entities.Catalogue.tbl_Menu.Link">
+            <summary>
+            Đường dẫn đến trang
+            </summary>
+        </member>
+        <member name="P:Entities.Catalogue.tbl_TechnicalOptions.isFile">
+            <summary>
+            Định dạng file
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Products.Thumbnail">
+            <summary>
+            Hình sản phẩm
+            </summary>
+        </member>
+        <member name="T:Entities.Configuration.OTPHistories">
+            <summary>
+            Lịch sử OTP
+            </summary>
+        </member>
+        <member name="P:Entities.Configuration.OTPHistories.UserId">
+            <summary>
+            Thông tin người dùng
+            </summary>
+        </member>
+        <member name="P:Entities.Configuration.OTPHistories.Phone">
+            <summary>
+            SDT gửi OTP
+            </summary>
+        </member>
+        <member name="P:Entities.Configuration.OTPHistories.Email">
+            <summary>
+            Email gửi OTP
+            </summary>
+        </member>
+        <member name="P:Entities.Configuration.OTPHistories.OtpValue">
+            <summary>
+            Mã OTP
+            </summary>
+        </member>
+        <member name="P:Entities.Configuration.OTPHistories.ExpiredDate">
+            <summary>
+            Thời gian hết hạn
+            </summary>
+        </member>
+        <member name="P:Entities.Configuration.OTPHistories.Status">
+            <summary>
+            Trạng thái
+            </summary>
+        </member>
+        <member name="P:Entities.Configuration.SMSEmailTemplates.Subject">
+            <summary>
+            Tiêu đề
+            </summary>
+        </member>
+        <member name="P:Entities.Configuration.SMSEmailTemplates.Body">
+            <summary>
+            Nội dung
+            </summary>
+        </member>
+        <member name="P:Entities.Configuration.SMSEmailTemplates.IsSMS">
+            <summary>
+            Mẫu là SMS
+            </summary>
+        </member>
+        <member name="T:Entities.Configuration.tbl_EmailConfigurations">
+            <summary>
+            Bảng cấu hình Email
+            </summary>
+        </member>
+        <member name="T:Entities.Configuration.tbl_SMSConfigurations">
+            <summary>
+            Cấu hình SMS
+            </summary>
+        </member>
+        <member name="P:Entities.Configuration.tbl_SMSConfigurations.TemplateText">
+            <summary>
+            Cú pháp tin nhắn mẫu
+            </summary>
+        </member>
+        <member name="P:Entities.Configuration.tbl_SMSConfigurations.WebServiceUrl">
+            <summary>
+            Url web service
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.AppDomainFile.FileName">
+            <summary>
+            Tên file
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.AppDomainFile.ContentType">
+            <summary>
+            Loại file
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.AppDomainFile.FileExtension">
+            <summary>
+            Đuôi file
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.AppDomainFile.Description">
+            <summary>
+            Mô tả
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.AppDomainFile.FileRandomName">
+            <summary>
+            Tên lưu trong thư mục
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.AppDomainFile.FileUrl">
+            <summary>
+            Link download File
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.BaseSearch.PageIndex">
+            <summary>
+            Trang hiện tại
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.BaseSearch.PageSize">
+            <summary>
+            Số lượng item trên 1 trang
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.BaseSearch.SearchContent">
+            <summary>
+            Nội dung tìm kiếm chung
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.BaseSearch.OrderBy">
+            <summary>
+            0 Giảm 1 tăng
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.DomainEntities.TotalItem">
+            <summary>
+            Tổng số item phân trang
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.DomainEntities.Created">
+            <summary>
+            Ngày tạo
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.DomainEntities.CreatedBy">
+            <summary>
+            Tạo bởi
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.DomainEntities.Updated">
+            <summary>
+            Ngày cập nhật
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.DomainEntities.UpdatedBy">
+            <summary>
+            Người cập nhật
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.DomainEntities.Deleted">
+            <summary>
+            Cờ xóa
+            </summary>
+        </member>
+        <member name="P:Entities.DomainEntities.DomainEntities.Active">
+            <summary>
+            Cờ active
+            </summary>
+        </member>
+        <member name="P:Entities.Search.BiddingSessionsSearch.Name">
+            <summary>
+            Lọc theo tên phiên đấu thầu
+            </summary>
+        </member>
+        <member name="P:Entities.Search.BiddingSessionsSearch.BiddingId">
+            <summary>
+            Lọc theo gói thầu
+            </summary>
+        </member>
+        <member name="P:Entities.Search.BiddingSessionsSearch.Status">
+            <summary>
+            Lọc theo trạng thái
+            </summary>
+        </member>
+        <member name="P:Entities.Search.BiddingSessionsSearch.ProviderId">
+            <summary>
+            Lọc theo nhà cung cấp
+            </summary>
+        </member>
+        <member name="P:Entities.Search.BiddingsSearch.Name">
+            <summary>
+            Lọc theo tên phiên đấu thầu
+            </summary>
+        </member>
+        <member name="P:Entities.Search.BiddingsSearch.ProductId">
+            <summary>
+            Lọc theo sản phẩm
+            </summary>
+        </member>
+        <member name="P:Entities.Search.BiddingTicketsSearch.StartDate">
+            <summary>
+            Từ ngày
+            </summary>
+        </member>
+        <member name="P:Entities.Search.BiddingTicketsSearch.EndDate">
+            <summary>
+            Đến ngày
+            </summary>
+        </member>
+        <member name="P:Entities.Search.BiddingTicketsSearch.StartPrice">
+            <summary>
+            Số tiền bắt đầu
+            </summary>
+        </member>
+        <member name="P:Entities.Search.BiddingTicketsSearch.EndPrice">
+            <summary>
+            Số tiền kết thúc
+            </summary>
+        </member>
+        <member name="P:Entities.Search.BiddingTicketsSearch.StartQuantity">
+            <summary>
+            Số lượng bắt đầu
+            </summary>
+        </member>
+        <member name="P:Entities.Search.BiddingTicketsSearch.EndQuantity">
+            <summary>
+            Số lượng kết thúc
+            </summary>
+        </member>
+        <member name="P:Entities.Search.BiddingTicketsSearch.BiddingSessionId">
+            <summary>
+            Lọc theo id phiên đấu thầu
+            </summary>
+        </member>
+        <member name="P:Entities.Search.BiddingTicketsSearch.BiddingId">
+            <summary>
+            Lọc theo id gói thầu
+            </summary>
+        </member>
+        <member name="P:Entities.Search.BiddingTicketsSearch.Status">
+            <summary>
+            Lọc theo trạng thái
+            </summary>
+        </member>
+        <member name="P:Entities.Search.BiddingTicketsSearch.CreatedBy">
+            <summary>
+            Lọc theo người tạo ra phiếu
+            </summary>
+        </member>
+        <member name="P:Entities.Search.NotificationsSearch.UserId">
+            <summary>
+            Lọc theo userId (Người nhận thông báo)
+            </summary>
+        </member>
+        <member name="P:Entities.Search.NotificationsSearch.IsSeen">
+            <summary>
+            Đã xem
+            </summary>
+        </member>
+        <member name="P:Entities.Search.ProviderSearch.Username">
+            <summary>
+            Lọc theo tài khoản
+            </summary>
+        </member>
+        <member name="P:Entities.Search.ProviderSearch.FullName">
+            <summary>
+            Lọc theo tên
+            </summary>
+        </member>
+        <member name="P:Entities.Search.ProviderSearch.CompanyName">
+            <summary>
+            Lọc theo tên công ty
+            </summary>
+        </member>
+        <member name="P:Entities.Search.ProviderSearch.Active">
+            <summary>
+            Lọc theo cờ active
+            </summary>
+        </member>
+        <member name="P:Entities.Search.RoleSearch.Code">
+            <summary>
+            Lọc role theo mã code
+            </summary>
+        </member>
+        <member name="P:Entities.Search.TechnicalProductSearch.ProductId">
+            <summary>
+            Lọc theo sản phẩm
+            </summary>
+        </member>
+        <member name="P:Entities.Search.UserSearch.Status">
+            <summary>
+            Lọc theo trạng thái: 0.Chưa kích hoạt 1.Kích hoạt 2.Khóa
+            </summary>
+        </member>
+        <member name="P:Entities.Search.UserSearch.Role">
+            <summary>
+            Lọc theo chức vụ
+            </summary>
+        </member>
+        <member name="P:Entities.Search.UserSearch.Username">
+            <summary>
+            Lọc theo tài khoản
+            </summary>
+        </member>
+        <member name="P:Entities.Search.UserSearch.FullName">
+            <summary>
+            Lọc theo tên
+            </summary>
+        </member>
+        <member name="P:Entities.Search.UserSearch.Phone">
+            <summary>
+            Lọc theo số điện thoại
+            </summary>
+        </member>
+        <member name="P:Entities.Search.UserSearch.Gender">
+            <summary>
+            Lọc theo giới tính
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Biddings.Code">
+            <summary>
+            Mã gói thầu
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Biddings.Name">
+            <summary>
+            Tên gói thầu
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Biddings.Description">
+            <summary>
+            Mô tả gói thầu
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Biddings.ProductId">
+            <summary>
+            Id của sản phẩm
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Biddings.Product">
+            <summary>
+            Tên Sản phẩm
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Biddings.CreatedName">
+            <summary>
+            Tên người tạo
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_BiddingSessions.BiddingId">
+            <summary>
+            id gói thầu
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_BiddingSessions.Code">
+            <summary>
+            Mã phiên đấu thầu
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_BiddingSessions.Name">
+            <summary>
+            Tên phiên đấu thầu
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_BiddingSessions.StartDate">
+            <summary>
+            Thời gian bắt đầu
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_BiddingSessions.EndDate">
+            <summary>
+            Thời gian kết thúc
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_BiddingSessions.MinimumQuantity">
+            <summary>
+            Số lượng tối thiểu
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_BiddingSessions.MaximumQuantity">
+            <summary>
+            Số lượng tối đa
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_BiddingSessions.Status">
+            <summary>
+            Trạng thái
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_BiddingSessions.Description">
+            <summary>
+            Mô tả
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_BiddingSessions.JobHangFireId">
+            <summary>
+            Id job schedule trên hangfire
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_BiddingTickets.BiddingSessionId">
+            <summary>
+            Id Phiên đấu thầu
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_BiddingTickets.BiddingId">
+            <summary>
+            Id Gói thầu của phiên tham gia
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_BiddingTickets.Quantity">
+            <summary>
+            Số lượng sản phẩm
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_BiddingTickets.Price">
+            <summary>
+            Định giá
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_BiddingTickets.Status">
+            <summary>
+            Trạng thái
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_BiddingTickets.CompanyName">
+            <summary>
+            Tên công ty
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_BiddingTickets.FullName">
+            <summary>
+            Tên nhà cung cấp
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_BiddingTickets.BiddingName">
+            <summary>
+            Tên gói thầu
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_BiddingTickets.BiddingSessionName">
+            <summary>
+            Tên phiên thầu
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_BiddingTickets.Thumbnail">
+            <summary>
+            Hình sản phẩm
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_BiddingTickets.PersonInCharge">
+            <summary>
+            Danh sách nhân viên phụ trách
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Notification.UserId">
+            <summary>
+            Id người nhận thông báo
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Notification.Title">
+            <summary>
+            Tiêu đề thông báo
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Notification.Content">
+            <summary>
+            Nội dung thông báo
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Notification.IsSeen">
+            <summary>
+            Đã xem
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Notification.Url">
+            <summary>
+            Đường link thông báo
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Notification.IsType">
+            <summary>
+            Loại thông báo
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Providers.Username">
+            <summary>
+            UserName
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Providers.FullName">
+            <summary>
+            Họ và tên
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Providers.CompanyName">
+            <summary>
+            Tên công ty
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Providers.Phone">
+            <summary>
+            Số điện thoại
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Providers.Email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Providers.Address">
+            <summary>
+            Địa chỉ
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Providers.Status">
+            <summary>
+            Trạng thái
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Providers.Password">
+            <summary>
+            Mật khẩu người dùng
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Providers.Roles">
+            <summary>
+            Danh sách chức vụ của người dùng
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Providers.TaxCode">
+            <summary>
+            Mã số thuế
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Providers.PersonInCharge">
+            <summary>
+            Nhân viên phụ trách
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Providers.CreatedName">
+            <summary>
+            Tên Người tạo
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Role.Permissions">
+            <summary>
+            Danh sách chức năng được truy cập
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Role.MenuList">
+            <summary>
+            Danh sách menu được truy cập
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Role.RoleNumberLevel">
+            <summary>
+            Cấp số role
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_TechnicalProduct.ProductId">
+            <summary>
+            Id sản phẩm
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_TechnicalProduct.TechnicalValue">
+            <summary>
+            Nội dung kỹ thuật
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Users.Code">
+            <summary>
+            Mã người dùng
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Users.Username">
+            <summary>
+            UserName
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Users.FullName">
+            <summary>
+            Họ và tên
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Users.Phone">
+            <summary>
+            Số điện thoại
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Users.Email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Users.Address">
+            <summary>
+            Địa chỉ
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Users.Status">
+            <summary>
+            Trạng thái
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Users.Birthday">
+            <summary>
+            Ngày sinh
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Users.IdentityCard">
+            <summary>
+            Chứng minh nhân dân
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Users.IdentityCardDate">
+            <summary>
+            Ngày cấp chứng minh nhân dân
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Users.IdentityCardAddress">
+            <summary>
+            Nơi cấp chứng minh nhân dân
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Users.Password">
+            <summary>
+            Mật khẩu người dùng
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Users.Gender">
+            <summary>
+            Giới tính
+            0 => Khác
+            1 => Nam
+            2 => Nữ
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Users.IsAdmin">
+            <summary>
+            Cờ cho biết đây là admin
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Users.Roles">
+            <summary>
+            Danh sách chức vụ của người dùng
+            </summary>
+        </member>
+        <member name="P:Entities.tbl_Users.Note">
+            <summary>
+            Ghi chú
+            </summary>
+        </member>
+    </members>
+</doc>

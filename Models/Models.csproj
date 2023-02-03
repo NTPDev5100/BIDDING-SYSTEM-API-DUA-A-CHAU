@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>E:\acpAPI\ACP\Models\Models.xml</DocumentationFile>
+    <NoWarn>1701;1702;1591</NoWarn>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ContactCustomer\**" />
+    <Compile Remove="Customer\**" />
+    <Compile Remove="Orders\**" />
+    <Compile Remove="Products\**" />
+    <Compile Remove="Project\**" />
+    <Compile Remove="Warehouses\**" />
+    <EmbeddedResource Remove="ContactCustomer\**" />
+    <EmbeddedResource Remove="Customer\**" />
+    <EmbeddedResource Remove="Orders\**" />
+    <EmbeddedResource Remove="Products\**" />
+    <EmbeddedResource Remove="Project\**" />
+    <EmbeddedResource Remove="Warehouses\**" />
+    <None Remove="ContactCustomer\**" />
+    <None Remove="Customer\**" />
+    <None Remove="Orders\**" />
+    <None Remove="Products\**" />
+    <None Remove="Project\**" />
+    <None Remove="Warehouses\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Catalogue\BranchModel.cs" />
+    <Compile Remove="Catalogue\CommodityTypeModel.cs" />
+    <Compile Remove="Catalogue\DiscountModel.cs" />
+    <Compile Remove="Catalogue\ExchangeModeModel.cs" />
+    <Compile Remove="Catalogue\KindOfGoldModel.cs" />
+    <Compile Remove="Catalogue\ProjectTypeModel.cs" />
+    <Compile Remove="Catalogue\RequestTypeModel.cs" />
+    <Compile Remove="Catalogue\ServiceTypeModel.cs" />
+    <Compile Remove="Catalogue\ShellShapeModel.cs" />
+    <Compile Remove="Catalogue\ShellStyleModel.cs" />
+    <Compile Remove="Catalogue\SourceTypeModel.cs" />
+    <Compile Remove="Catalogue\SupplierModel.cs" />
+    <Compile Remove="Catalogue\TheCounterModel.cs" />
+    <Compile Remove="Catalogue\TypeMemberModel.cs" />
+    <Compile Remove="DomainModels\ControllerModel.cs" />
+    <Compile Remove="DomainModels\RoleModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Entities\Entities.csproj" />
+    <ProjectReference Include="..\Request\Request.csproj" />
+    <ProjectReference Include="..\Utilities\Utilities.csproj" />
+  </ItemGroup>
+
+</Project>

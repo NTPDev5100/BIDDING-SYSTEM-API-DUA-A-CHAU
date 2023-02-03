@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Services\ContactCustomer\**" />
+    <Compile Remove="Services\Project\**" />
+    <Compile Remove="Services\WebHooks\**" />
+    <EmbeddedResource Remove="Services\ContactCustomer\**" />
+    <EmbeddedResource Remove="Services\Project\**" />
+    <EmbeddedResource Remove="Services\WebHooks\**" />
+    <None Remove="Services\ContactCustomer\**" />
+    <None Remove="Services\Project\**" />
+    <None Remove="Services\WebHooks\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Services\Catalogue\CommodityTypeService.cs" />
+    <Compile Remove="Services\Catalogue\ProjectTypeService.cs" />
+    <Compile Remove="Services\Catalogue\RequestTypeService.cs" />
+    <Compile Remove="Services\Catalogue\ServiceTypeService.cs" />
+    <Compile Remove="Services\Catalogue\SourceTypeService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EPPlus" Version="5.8.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.13" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="6.0.0" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.15" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Entities\Entities.csproj" />
+    <ProjectReference Include="..\Extensions\Extensions.csproj" />
+    <ProjectReference Include="..\Interface\Interface.csproj" />
+  </ItemGroup>
+
+</Project>

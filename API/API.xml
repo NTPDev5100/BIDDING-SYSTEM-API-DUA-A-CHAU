@@ -1,0 +1,352 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API</name>
+    </assembly>
+    <members>
+        <member name="T:API.Controllers.Auth.AuthController">
+            <summary>
+            Quản lý tài khoản
+            </summary>
+        </member>
+        <member name="T:API.Controllers.BiddingController">
+            <summary>
+            Quản lý gói thầu
+            </summary>
+        </member>
+        <member name="M:API.Controllers.BiddingController.AddItem(Request.RequestCreate.BiddingsCreate)">
+            <summary>
+            Thêm mới gói thầu
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BiddingController.UpdateItem(Request.RequestUpdate.BiddingsUpdate)">
+            <summary>
+            Cập nhật thông tin gói thầu
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BiddingController.Get(Entities.Search.BiddingsSearch)">
+            <summary>
+            Danh sách gói thầu
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="T:API.Controllers.BiddingSessionController">
+            <summary>
+            Quản lý phiên đấu thầu
+            </summary>
+        </member>
+        <member name="M:API.Controllers.BiddingSessionController.AddItem(Request.RequestCreate.BiddingSessionCreate)">
+            <summary>
+            Thêm mới phiên đấu thầu
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BiddingSessionController.UpdateItem(Request.RequestUpdate.BiddingSessionUpdate)">
+            <summary>
+            Cập nhật thông tin phiêu đấu thầu
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BiddingSessionController.Get(Entities.Search.BiddingSessionsSearch)">
+            <summary>
+            Danh sách phiên đấu thầu
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="T:API.Controllers.BiddingTicketController">
+            <summary>
+            Quản lý phiếu đấu thầu
+            </summary>
+        </member>
+        <member name="M:API.Controllers.BiddingTicketController.AddItem(Request.RequestCreate.BiddingTicketCreate)">
+            <summary>
+            Thêm mới phiếu đấu thầu
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BiddingTicketController.UpdateResultBiddingTicket(Utilities.CatalogueEnums.BidTicketStatusModel,System.Nullable{System.Guid})">
+            <summary>
+            Cập nhật kết quả phiếu đấu thầu
+            </summary>
+            <param name="itemModel"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BiddingTicketController.Get(Entities.Search.BiddingTicketsSearch)">
+            <summary>
+            Danh sách phiếu đấu thầu
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BiddingTicketController.ApprovalOfSelectedBids(Utilities.CatalogueEnums.BidTicketStatusListModel)">
+            <summary>
+            Duyệt kết quả các phiếu thầu được chọn
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BiddingTicketController.ExportExcel(Entities.Search.BiddingTicketsSearch)">
+            <summary>
+            Xuất excel
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BiddingTicketController.ExportExcel(Entities.Search.BiddingTicketsSearch,System.Int32)">
+            <summary>
+            Xuất Excel
+            </summary>
+            <param name="baseSearch"></param>
+            <param name="typeListTicket"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BiddingTicketController.GetTemplateFilePath(System.String)">
+            <summary>
+            Lấy đường dẫn file template
+            </summary>
+            <param name="fileTemplateName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BiddingTicketController.GetParameterReport(Utilities.PagedList{Models.BiddingTicketModel},Entities.Search.BiddingTicketsSearch)">
+            <summary>
+            Lấy thông số parameter truyền vào
+            </summary>
+            <param name="pagedList"></param>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.AddressController.GetCities(Entities.DomainEntities.BaseSearch)">
+            <summary>
+            Lấy danh sách tỉnh/thành phố
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.AddressController.GetDistricts(Entities.Search.DistrictsSearch)">
+            <summary>
+            Lấy danh sách quận/huyện
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.AddressController.GetWards(Entities.Search.WardsSearch)">
+            <summary>
+            Lấy danh sách phường/xã
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="T:API.Controllers.Catalogue.ProductController">
+            <summary>
+            Quản lý sản phẩm
+            </summary>
+        </member>
+        <member name="M:API.Controllers.Catalogue.ProductController.AddItem(Request.Catalogue.CatalogueCreate.ProductsCreate)">
+            <summary>
+            Thêm mới item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalogue.ProductController.UpdateItem(Request.Catalogue.CatalogueUpdate.ProductsUpdate)">
+            <summary>
+            Cập nhật thông tin item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalogue.ProductController.DeleteItem(System.Guid)">
+            <summary>
+            Xóa item
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalogue.ProductController.Get(Entities.Search.ProductSearch)">
+            <summary>
+            Lấy danh sách item phân trang
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="T:API.Controllers.Catalogue.TechnicalOptionController">
+            <summary>
+            Quản lý loại kỹ thuật
+            </summary>
+        </member>
+        <member name="M:API.Controllers.Catalogue.TechnicalOptionController.DeleteItem(System.Guid)">
+            <summary>
+            Xóa item
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:API.Controllers.FileController">
+            <summary>
+            Upload file lên hệ thống
+            </summary>
+        </member>
+        <member name="T:API.Controllers.NotificationController">
+            <summary>
+            Quản lý thông báo
+            </summary>
+        </member>
+        <member name="M:API.Controllers.NotificationController.Get(Entities.Search.NotificationsSearch)">
+            <summary>
+            Danh sách thông báo
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.NotificationController.Seen(System.Guid)">
+            <summary>
+            Xem thông báo
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.NotificationController.SeenAll">
+            <summary>
+            Xem tất cả thông báo
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:API.Controllers.ProviderController">
+            <summary>
+            Quản lý nhà cung cấp
+            </summary>
+        </member>
+        <member name="M:API.Controllers.ProviderController.AddItem(Request.RequestCreate.ProviderCreate)">
+            <summary>
+            Thêm mới nhà cung cấp
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ProviderController.UpdateItem(Request.RequestUpdate.ProviderUpdate)">
+            <summary>
+            Cập nhật thông tin nhà cung cấp
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ProviderController.Get(Entities.Search.ProviderSearch)">
+            <summary>
+            Danh sách nhà cung cấp
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ProviderController.ApproveMultiples(Entities.Search.ProviderSearch)">
+            <summary>
+            Duyệt danh sách nhà cung cấp
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:API.Controllers.RoleController">
+            <summary>
+            Quản lý phân quyền
+            </summary>
+        </member>
+        <member name="M:API.Controllers.RoleController.AddItem(Request.RequestCreate.RoleCreate)">
+            <summary>
+            Thêm mới quyền
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.RoleController.UpdateItem(Request.RequestUpdate.RoleUpdate)">
+            <summary>
+            Cập nhật quyền
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.RoleController.DeleteItem(System.Guid)">
+            <summary>
+            Xoá phân quyền
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.RoleController.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin theo id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.RoleController.Get(Entities.DomainEntities.BaseSearch)">
+            <summary>
+            Danh sách phân quyền
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="T:API.Controllers.TechnicalProductController">
+            <summary>
+            Quản lý kỹ thuật sản phẩm
+            </summary>
+        </member>
+        <member name="M:API.Controllers.TechnicalProductController.AddItem(Request.RequestCreate.TechnicalProductCreate)">
+            <summary>
+            Thêm mới kỹ thuật sản phẩm
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.TechnicalProductController.UpdateItem(Request.RequestUpdate.TechnicalProductUpdate)">
+            <summary>
+            Cập nhật thông tin kỹ thuật sản phẩm
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.TechnicalProductController.Get(Entities.Search.TechnicalProductSearch)">
+            <summary>
+            Lấy danh sách item phân trang
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BaseAPI.Controllers.UserController">
+            <summary>
+            Quản lý nhân viên
+            </summary>
+        </member>
+        <member name="M:BaseAPI.Controllers.UserController.AddItem(Request.RequestCreate.UserCreate)">
+            <summary>
+            Thêm mới nhân viên
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.UserController.UpdateItem(Request.RequestUpdate.UserUpdate)">
+            <summary>
+            Cập nhật thông tin nhân viên
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.UserController.Get(Entities.Search.UserSearch)">
+            <summary>
+            Danh sách nhân viên
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

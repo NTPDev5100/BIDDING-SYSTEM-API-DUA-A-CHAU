@@ -1,0 +1,13 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace Extensions
+{
+    public class AppSettings
+    {
+        public string secret { get; set; }
+        public bool grantPermissionDebug { get; set; }
+    }
+}

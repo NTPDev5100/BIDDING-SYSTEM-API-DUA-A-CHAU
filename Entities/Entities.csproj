@@ -1,0 +1,75 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>E:\acpAPI\ACP\Entities\Entities.xml</DocumentationFile>
+    <NoWarn>1701;1702;1591</NoWarn>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Catalogue\Discounts\**" />
+    <Compile Remove="Catalogue\TheCounters\**" />
+    <Compile Remove="ContactCustomer\**" />
+    <Compile Remove="Customer\**" />
+    <Compile Remove="Orders\**" />
+    <Compile Remove="Products\**" />
+    <Compile Remove="Project\**" />
+    <Compile Remove="Warehouses\**" />
+    <Compile Remove="WebHooks\**" />
+    <EmbeddedResource Remove="Catalogue\Discounts\**" />
+    <EmbeddedResource Remove="Catalogue\TheCounters\**" />
+    <EmbeddedResource Remove="ContactCustomer\**" />
+    <EmbeddedResource Remove="Customer\**" />
+    <EmbeddedResource Remove="Orders\**" />
+    <EmbeddedResource Remove="Products\**" />
+    <EmbeddedResource Remove="Project\**" />
+    <EmbeddedResource Remove="Warehouses\**" />
+    <EmbeddedResource Remove="WebHooks\**" />
+    <None Remove="Catalogue\Discounts\**" />
+    <None Remove="Catalogue\TheCounters\**" />
+    <None Remove="ContactCustomer\**" />
+    <None Remove="Customer\**" />
+    <None Remove="Orders\**" />
+    <None Remove="Products\**" />
+    <None Remove="Project\**" />
+    <None Remove="Warehouses\**" />
+    <None Remove="WebHooks\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Catalogue\Branch.cs" />
+    <Compile Remove="Catalogue\Cleanness.cs" />
+    <Compile Remove="Catalogue\Color.cs" />
+    <Compile Remove="Catalogue\CommodityGroup.cs" />
+    <Compile Remove="Catalogue\CommodityType.cs" />
+    <Compile Remove="Catalogue\CutAngle.cs" />
+    <Compile Remove="Catalogue\ExchangeMode.cs" />
+    <Compile Remove="Catalogue\KindOfGold.cs" />
+    <Compile Remove="Catalogue\LuminescentType.cs" />
+    <Compile Remove="Catalogue\OppositeType.cs" />
+    <Compile Remove="Catalogue\PelletShape.cs" />
+    <Compile Remove="Catalogue\ProjectTypes.cs" />
+    <Compile Remove="Catalogue\RequestTypes.cs" />
+    <Compile Remove="Catalogue\ServiceTypes.cs" />
+    <Compile Remove="Catalogue\ShadowType.cs" />
+    <Compile Remove="Catalogue\ShellShape.cs" />
+    <Compile Remove="Catalogue\ShellStyle.cs" />
+    <Compile Remove="Catalogue\SourceTypes.cs" />
+    <Compile Remove="Catalogue\Supplier.cs" />
+    <Compile Remove="Catalogue\TestType.cs" />
+    <Compile Remove="Catalogue\TransactionType.cs" />
+    <Compile Remove="Catalogue\TypeMember.cs" />
+    <Compile Remove="Search\SearchContactCustomer.cs" />
+    <Compile Remove="Search\SearchProject.cs" />
+    <Compile Remove="Search\SearchProjectComment.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Utilities\Utilities.csproj" />
+  </ItemGroup>
+
+</Project>

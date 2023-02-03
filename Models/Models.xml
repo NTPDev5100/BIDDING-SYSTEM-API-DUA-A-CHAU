@@ -1,0 +1,556 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Models</name>
+    </assembly>
+    <members>
+        <member name="P:Models.BiddingModel.Code">
+            <summary>
+            Mã gói thầu
+            </summary>
+        </member>
+        <member name="P:Models.BiddingModel.Name">
+            <summary>
+            Tên gói thầu
+            </summary>
+        </member>
+        <member name="P:Models.BiddingModel.Description">
+            <summary>
+            Mô tả gói thầu
+            </summary>
+        </member>
+        <member name="P:Models.BiddingModel.ProductId">
+            <summary>
+            Id của sản phẩm
+            </summary>
+        </member>
+        <member name="P:Models.BiddingModel.Product">
+            <summary>
+            Tên Sản phẩm
+            </summary>
+        </member>
+        <member name="P:Models.BiddingModel.CreatedName">
+            <summary>
+            Tên người tạo
+            </summary>
+        </member>
+        <member name="P:Models.BiddingSessionModel.BiddingId">
+            <summary>
+            id gói thầu
+            </summary>
+        </member>
+        <member name="P:Models.BiddingSessionModel.Code">
+            <summary>
+            Mã người dùng
+            </summary>
+        </member>
+        <member name="P:Models.BiddingSessionModel.Name">
+            <summary>
+            Tên phiên đấu thầu
+            </summary>
+        </member>
+        <member name="P:Models.BiddingSessionModel.StartDate">
+            <summary>
+            Thời gian bắt đầu
+            </summary>
+        </member>
+        <member name="P:Models.BiddingSessionModel.EndDate">
+            <summary>
+            Thời gian kết thúc
+            </summary>
+        </member>
+        <member name="P:Models.BiddingSessionModel.MinimumQuantity">
+            <summary>
+            Số lượng tối thiểu
+            </summary>
+        </member>
+        <member name="P:Models.BiddingSessionModel.MaximumQuantity">
+            <summary>
+            Số lượng tối đa
+            </summary>
+        </member>
+        <member name="P:Models.BiddingSessionModel.Status">
+            <summary>
+            Trạng thái
+            </summary>
+        </member>
+        <member name="P:Models.BiddingSessionModel.StatusName">
+            <summary>
+            Tên trạng thái
+            </summary>
+        </member>
+        <member name="P:Models.BiddingSessionModel.Description">
+            <summary>
+            Mô tả
+            </summary>
+        </member>
+        <member name="P:Models.BiddingSessionModel.Thumbnail">
+            <summary>
+            Hình ảnh gói thầu
+            </summary>
+        </member>
+        <member name="P:Models.BiddingSessionModel.ProductName">
+            <summary>
+            Tên sản phẩm
+            </summary>
+        </member>
+        <member name="P:Models.BiddingSessionModel.BiddingSessionTimeOut">
+            <summary>
+            Thời gian còn lại
+            </summary>
+        </member>
+        <member name="P:Models.BiddingSessionModel.IsBid">
+            <summary>
+            Cờ tham gia bỏ thầu
+            </summary>
+        </member>
+        <member name="P:Models.BiddingSessionModel.ProductId">
+            <summary>
+            Id sản phẩm của gói thầu
+            </summary>
+        </member>
+        <member name="P:Models.BiddingSessionModel.CreatedName">
+            <summary>
+            Tên người tạo
+            </summary>
+        </member>
+        <member name="P:Models.BiddingSessionModel.JobHangFireId">
+            <summary>
+            Id job schedule trên hangfire
+            </summary>
+        </member>
+        <member name="P:Models.BiddingTicketModel.BiddingSessionId">
+            <summary>
+            Id Phiên đấu thầu
+            </summary>
+        </member>
+        <member name="P:Models.BiddingTicketModel.BiddingId">
+            <summary>
+            Id Gói thầu của phiên tham gia
+            </summary>
+        </member>
+        <member name="P:Models.BiddingTicketModel.Quantity">
+            <summary>
+            Số lượng sản phẩm
+            </summary>
+        </member>
+        <member name="P:Models.BiddingTicketModel.Price">
+            <summary>
+            Định giá
+            </summary>
+        </member>
+        <member name="P:Models.BiddingTicketModel.Status">
+            <summary>
+            Trạng thái
+            </summary>
+        </member>
+        <member name="P:Models.BiddingTicketModel.CompanyName">
+            <summary>
+            Tên công ty
+            </summary>
+        </member>
+        <member name="P:Models.BiddingTicketModel.FullName">
+            <summary>
+            Tên nhà cung cấp
+            </summary>
+        </member>
+        <member name="P:Models.BiddingTicketModel.BiddingName">
+            <summary>
+            Tên gói thầu
+            </summary>
+        </member>
+        <member name="P:Models.BiddingTicketModel.BiddingSessionName">
+            <summary>
+            Tên phiên thầu
+            </summary>
+        </member>
+        <member name="P:Models.BiddingTicketModel.Thumbnail">
+            <summary>
+            Hình sản phẩm
+            </summary>
+        </member>
+        <member name="P:Models.BiddingTicketModel.PersonInCharge">
+            <summary>
+            Danh sách chuỗi nhân viên phụ trách
+            </summary>
+        </member>
+        <member name="P:Models.BiddingTicketModel.PersonInChargeNameList">
+            <summary>
+            Danh sách nhân viên phụ trách
+            </summary>
+        </member>
+        <member name="P:Models.Catalogue.MenuModel.Icon">
+            <summary>
+            Icon của menu
+            </summary>
+        </member>
+        <member name="P:Models.Catalogue.MenuModel.Link">
+            <summary>
+            Đường dẫn đến trang
+            </summary>
+        </member>
+        <member name="P:Models.Catalogue.TechnicalOptionModel.isFile">
+            <summary>
+            Định dạng file
+            </summary>
+        </member>
+        <member name="P:Models.ProductModel.TechnicalValue">
+            <summary>
+            Nội dung kỹ thuật
+            </summary>
+        </member>
+        <member name="T:Models.Configuration.EmailConfigurationModel">
+            <summary>
+            Cấu hình email
+            </summary>
+        </member>
+        <member name="P:Models.Configuration.EmailConfigurationModel.smtpServer">
+            <summary>
+            SMTP Server
+            </summary>
+        </member>
+        <member name="P:Models.Configuration.EmailConfigurationModel.port">
+            <summary>
+            Port 
+            </summary>
+        </member>
+        <member name="P:Models.Configuration.EmailConfigurationModel.enableSsl">
+            <summary>
+            Cờ mở SSL
+            </summary>
+        </member>
+        <member name="P:Models.Configuration.EmailConfigurationModel.connectType">
+            <summary>
+            Loại connect
+            </summary>
+        </member>
+        <member name="P:Models.Configuration.EmailConfigurationModel.displayName">
+            <summary>
+            Tên hiển thị
+            </summary>
+        </member>
+        <member name="P:Models.Configuration.EmailConfigurationModel.username">
+            <summary>
+            Tên đăng nhập cấu hình
+            </summary>
+        </member>
+        <member name="T:Models.Configuration.OTPHistoryModel">
+            <summary>
+            Lịch sử OTP
+            </summary>
+        </member>
+        <member name="P:Models.Configuration.OTPHistoryModel.UserId">
+            <summary>
+            Thông tin người dùng
+            </summary>
+        </member>
+        <member name="P:Models.Configuration.OTPHistoryModel.Phone">
+            <summary>
+            SDT gửi OTP
+            </summary>
+        </member>
+        <member name="P:Models.Configuration.OTPHistoryModel.Email">
+            <summary>
+            Email gửi OTP
+            </summary>
+        </member>
+        <member name="P:Models.Configuration.OTPHistoryModel.OTPValue">
+            <summary>
+            Mã OTP
+            </summary>
+        </member>
+        <member name="P:Models.Configuration.OTPHistoryModel.ExpiredDate">
+            <summary>
+            Thời gian hết hạn
+            </summary>
+        </member>
+        <member name="P:Models.Configuration.OTPHistoryModel.Status">
+            <summary>
+            Trạng thái
+            </summary>
+        </member>
+        <member name="P:Models.Configuration.SMSConfiguartionModel.templateText">
+            <summary>
+            Cú pháp tin nhắn mẫu
+            </summary>
+        </member>
+        <member name="P:Models.Configuration.SMSConfiguartionModel.webServiceUrl">
+            <summary>
+            Url web service
+            </summary>
+        </member>
+        <member name="T:Models.Configuration.SMSEmailTemplateModel">
+            <summary>
+            Bảng câu hình template gửi đi
+            </summary>
+        </member>
+        <member name="P:Models.Configuration.SMSEmailTemplateModel.subject">
+            <summary>
+            Tiêu đề
+            </summary>
+        </member>
+        <member name="P:Models.Configuration.SMSEmailTemplateModel.body">
+            <summary>
+            Nội dung
+            </summary>
+        </member>
+        <member name="P:Models.Configuration.SMSEmailTemplateModel.isSMS">
+            <summary>
+            Mẫu là SMS
+            </summary>
+        </member>
+        <member name="P:Models.DomainModels.AppDomainFileModel.FileName">
+            <summary>
+            Tên file
+            </summary>
+        </member>
+        <member name="P:Models.DomainModels.AppDomainFileModel.ContentType">
+            <summary>
+            Loại file
+            </summary>
+        </member>
+        <member name="P:Models.DomainModels.AppDomainFileModel.FileExtension">
+            <summary>
+            Đuôi file
+            </summary>
+        </member>
+        <member name="P:Models.DomainModels.AppDomainFileModel.Description">
+            <summary>
+            Mô tả
+            </summary>
+        </member>
+        <member name="P:Models.DomainModels.AppDomainFileModel.FileRandomName">
+            <summary>
+            Tên lưu trong thư mục
+            </summary>
+        </member>
+        <member name="P:Models.DomainModels.AppDomainFileModel.FileUrl">
+            <summary>
+            Link download File
+            </summary>
+        </member>
+        <member name="P:Models.DomainModels.AppDomainModel.Id">
+            <summary>
+            Khóa chính
+            </summary>
+        </member>
+        <member name="P:Models.DomainModels.AppDomainModel.Created">
+            <summary>
+            Ngày tạo
+            </summary>
+        </member>
+        <member name="P:Models.DomainModels.AppDomainModel.CreatedBy">
+            <summary>
+            Tạo bởi
+            </summary>
+        </member>
+        <member name="P:Models.DomainModels.AppDomainModel.Updated">
+            <summary>
+            Ngày cập nhật
+            </summary>
+        </member>
+        <member name="P:Models.DomainModels.AppDomainModel.UpdatedBy">
+            <summary>
+            Người cập nhật
+            </summary>
+        </member>
+        <member name="P:Models.DomainModels.AppDomainModel.Active">
+            <summary>
+            Cờ active
+            </summary>
+        </member>
+        <member name="P:Models.NotificationModel.UserId">
+            <summary>
+            Id người nhận thông báo
+            </summary>
+        </member>
+        <member name="P:Models.NotificationModel.Title">
+            <summary>
+            Tiêu đề thông báo
+            </summary>
+        </member>
+        <member name="P:Models.NotificationModel.content">
+            <summary>
+            Nội dung thông báo
+            </summary>
+        </member>
+        <member name="P:Models.NotificationModel.IsSeen">
+            <summary>
+            Đã xem
+            </summary>
+        </member>
+        <member name="P:Models.NotificationModel.Url">
+            <summary>
+            Đường link thông báo
+            </summary>
+        </member>
+        <member name="P:Models.NotificationModel.IsType">
+            <summary>
+            Loại thông báo
+            </summary>
+        </member>
+        <member name="P:Models.ProviderModel.Username">
+            <summary>
+            UserName
+            </summary>
+        </member>
+        <member name="P:Models.ProviderModel.FullName">
+            <summary>
+            Họ và tên
+            </summary>
+        </member>
+        <member name="P:Models.ProviderModel.CompanyName">
+            <summary>
+            Tên công ty
+            </summary>
+        </member>
+        <member name="P:Models.ProviderModel.Phone">
+            <summary>
+            Số điện thoại
+            </summary>
+        </member>
+        <member name="P:Models.ProviderModel.Email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:Models.ProviderModel.Address">
+            <summary>
+            Địa chỉ
+            </summary>
+        </member>
+        <member name="P:Models.ProviderModel.Status">
+            <summary>
+            Trạng thái
+            </summary>
+        </member>
+        <member name="P:Models.ProviderModel.Password">
+            <summary>
+            Mật khẩu người dùng
+            </summary>
+        </member>
+        <member name="P:Models.ProviderModel.Roles">
+            <summary>
+            Danh sách chức vụ của người dùng
+            </summary>
+        </member>
+        <member name="P:Models.ProviderModel.TaxCode">
+            <summary>
+            Mã số thuế
+            </summary>
+        </member>
+        <member name="P:Models.ProviderModel.PersonInCharge">
+            <summary>
+            Nhân viên phụ trách
+            </summary>
+        </member>
+        <member name="P:Models.ProviderModel.CreatedName">
+            <summary>
+            Tên Người tạo
+            </summary>
+        </member>
+        <member name="P:Models.RoleModel.Permissions">
+            <summary>
+            Danh sách chức năng được truy cập
+            </summary>
+        </member>
+        <member name="P:Models.RoleModel.MenuList">
+            <summary>
+            Danh sách menu được truy cập
+            </summary>
+        </member>
+        <member name="P:Models.RoleModel.RoleNumberLevel">
+            <summary>
+            Cấp số role
+            </summary>
+        </member>
+        <member name="P:Models.TechnicalProductModel.ProductId">
+            <summary>
+            Id sản phẩm
+            </summary>
+        </member>
+        <member name="P:Models.TechnicalProductModel.TechnicalValue">
+            <summary>
+            Nội dung kỹ thuật
+            </summary>
+        </member>
+        <member name="P:Models.UserModel.Code">
+            <summary>
+            Mã người dùng
+            </summary>
+        </member>
+        <member name="P:Models.UserModel.Username">
+            <summary>
+            UserName
+            </summary>
+        </member>
+        <member name="P:Models.UserModel.FirstName">
+            <summary>
+            Họ
+            </summary>
+        </member>
+        <member name="P:Models.UserModel.LastName">
+            <summary>
+            Tên
+            </summary>
+        </member>
+        <member name="P:Models.UserModel.FullName">
+            <summary>
+            Họ và tên
+            </summary>
+        </member>
+        <member name="P:Models.UserModel.Phone">
+            <summary>
+            Số điện thoại
+            </summary>
+        </member>
+        <member name="P:Models.UserModel.Email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:Models.UserModel.Address">
+            <summary>
+            Địa chỉ
+            </summary>
+        </member>
+        <member name="P:Models.UserModel.Status">
+            <summary>
+            Trạng thái
+            </summary>
+        </member>
+        <member name="P:Models.UserModel.Birthday">
+            <summary>
+            Ngày sinh
+            </summary>
+        </member>
+        <member name="P:Models.UserModel.IdentityCard">
+            <summary>
+            Chứng minh nhân dân
+            </summary>
+        </member>
+        <member name="P:Models.UserModel.Password">
+            <summary>
+            Mật khẩu người dùng
+            </summary>
+        </member>
+        <member name="P:Models.UserModel.Gender">
+            <summary>
+            Giới tính
+            0 => Khác
+            1 => Nam
+            2 => Nữ
+            </summary>
+        </member>
+        <member name="P:Models.UserModel.Roles">
+            <summary>
+            Danh sách chức vụ của người dùng
+            </summary>
+        </member>
+        <member name="P:Models.UserModel.Note">
+            <summary>
+            Ghi chú
+            </summary>
+        </member>
+    </members>
+</doc>

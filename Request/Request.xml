@@ -1,0 +1,564 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Request</name>
+    </assembly>
+    <members>
+        <member name="T:Request.Auth.ChangePassword">
+            <summary>
+            Model đổi mật khẩu
+            </summary>
+        </member>
+        <member name="P:Request.Auth.ChangePassword.OldPassword">
+            <summary>
+            Mật khẩu cũ
+            </summary>
+        </member>
+        <member name="P:Request.Auth.ChangePassword.NewPassword">
+            <summary>
+            Mật khẩu mới
+            </summary>
+        </member>
+        <member name="P:Request.Auth.ChangePassword.ConfirmNewPassword">
+            <summary>
+            Xác nhận mật khẩu mới
+            </summary>
+        </member>
+        <member name="P:Request.Auth.ChangePasswordOTP.NewPassword">
+            <summary>
+            Mật khẩu mới
+            </summary>
+        </member>
+        <member name="P:Request.Auth.ChangePasswordOTP.ConfirmNewPassword">
+            <summary>
+            Xác nhận mật khẩu mới
+            </summary>
+        </member>
+        <member name="P:Request.Auth.Login.Username">
+            <summary>
+            Tên đăng nhập
+            </summary>
+        </member>
+        <member name="P:Request.Auth.Login.Password">
+            <summary>
+            Mật khẩu
+            </summary>
+        </member>
+        <member name="P:Request.Auth.Login.RememberPassword">
+            <summary>
+            Ghi nhớ mật khẩu
+            </summary>
+        </member>
+        <member name="P:Request.Auth.Register.Username">
+            <summary>
+            Email hoặc Số điện thoại
+            </summary>
+        </member>
+        <member name="P:Request.Auth.Register.Email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:Request.Auth.Register.Phone">
+            <summary>
+            Số điện thoại
+            </summary>
+        </member>
+        <member name="P:Request.Auth.Register.FullName">
+            <summary>
+            Họ và tên
+            </summary>
+        </member>
+        <member name="P:Request.Auth.Role.roleName">
+            <summary>
+            Tên chức năng (menu)
+            </summary>
+        </member>
+        <member name="P:Request.Auth.Role.isView">
+            <summary>
+            Quyền của chức năng
+            </summary>
+        </member>
+        <member name="P:Request.Catalogue.CatalogueCreate.ProductsCreate.TechnicalValue">
+            <summary>
+            Nội dung kỹ thuật
+            </summary>
+        </member>
+        <member name="P:Request.Catalogue.CatalogueCreate.RequestMenuCreateModel.Icon">
+            <summary>
+            Icon của menu
+            </summary>
+        </member>
+        <member name="P:Request.Catalogue.CatalogueCreate.RequestMenuCreateModel.Link">
+            <summary>
+            Đường dẫn đến trang
+            </summary>
+        </member>
+        <member name="P:Request.Catalogue.CatalogueCreate.TechnicalOptionCreate.isFile">
+            <summary>
+            Định dạng file
+            </summary>
+        </member>
+        <member name="P:Request.Catalogue.CatalogueUpdate.ProductsUpdate.TechnicalValue">
+            <summary>
+            Nội dung kỹ thuật
+            </summary>
+        </member>
+        <member name="P:Request.Catalogue.CatalogueUpdate.RequestMenuUpdateModel.Icon">
+            <summary>
+            Icon của menu
+            </summary>
+        </member>
+        <member name="P:Request.Catalogue.CatalogueUpdate.RequestMenuUpdateModel.Link">
+            <summary>
+            Đường dẫn đến trang
+            </summary>
+        </member>
+        <member name="P:Request.Catalogue.CatalogueUpdate.TechnicalOptionUpdate.isFile">
+            <summary>
+            Định dạng file
+            </summary>
+        </member>
+        <member name="T:Request.Configuration.EmailConfigurationRequest">
+            <summary>
+            Cấu hình email
+            </summary>
+        </member>
+        <member name="P:Request.Configuration.EmailConfigurationRequest.smtpServer">
+            <summary>
+            SMTP Server
+            </summary>
+        </member>
+        <member name="P:Request.Configuration.EmailConfigurationRequest.port">
+            <summary>
+            Port 
+            </summary>
+        </member>
+        <member name="P:Request.Configuration.EmailConfigurationRequest.enableSsl">
+            <summary>
+            Cờ mở SSL
+            </summary>
+        </member>
+        <member name="P:Request.Configuration.EmailConfigurationRequest.connectType">
+            <summary>
+            Loại connect
+            </summary>
+        </member>
+        <member name="P:Request.Configuration.EmailConfigurationRequest.displayName">
+            <summary>
+            Tên hiển thị
+            </summary>
+        </member>
+        <member name="P:Request.Configuration.EmailConfigurationRequest.userName">
+            <summary>
+            Tên đăng nhập cấu hình
+            </summary>
+        </member>
+        <member name="T:Request.Configuration.OTPHistoryRequest">
+            <summary>
+            Lịch sử OTP
+            </summary>
+        </member>
+        <member name="P:Request.Configuration.OTPHistoryRequest.userId">
+            <summary>
+            Thông tin người dùng
+            </summary>
+        </member>
+        <member name="P:Request.Configuration.OTPHistoryRequest.phone">
+            <summary>
+            SDT gửi OTP
+            </summary>
+        </member>
+        <member name="P:Request.Configuration.OTPHistoryRequest.email">
+            <summary>
+            Email gửi OTP
+            </summary>
+        </member>
+        <member name="P:Request.Configuration.OTPHistoryRequest.otpValue">
+            <summary>
+            Mã OTP
+            </summary>
+        </member>
+        <member name="P:Request.Configuration.OTPHistoryRequest.expiredDate">
+            <summary>
+            Thời gian hết hạn
+            </summary>
+        </member>
+        <member name="P:Request.Configuration.OTPHistoryRequest.status">
+            <summary>
+            Trạng thái
+            </summary>
+        </member>
+        <member name="P:Request.Configuration.SMSConfiguartionRequest.templateText">
+            <summary>
+            Cú pháp tin nhắn mẫu
+            </summary>
+        </member>
+        <member name="P:Request.Configuration.SMSConfiguartionRequest.webServiceUrl">
+            <summary>
+            Url web service
+            </summary>
+        </member>
+        <member name="T:Request.Configuration.SMSEmailTemplateRequest">
+            <summary>
+            Bảng câu hình template gửi đi
+            </summary>
+        </member>
+        <member name="P:Request.Configuration.SMSEmailTemplateRequest.subject">
+            <summary>
+            Tiêu đề
+            </summary>
+        </member>
+        <member name="P:Request.Configuration.SMSEmailTemplateRequest.body">
+            <summary>
+            Nội dung
+            </summary>
+        </member>
+        <member name="P:Request.Configuration.SMSEmailTemplateRequest.isSMS">
+            <summary>
+            Mẫu là SMS
+            </summary>
+        </member>
+        <member name="P:Request.DomainRequests.AppDomainFileRequestl.fileName">
+            <summary>
+            Tên file
+            </summary>
+        </member>
+        <member name="P:Request.DomainRequests.AppDomainFileRequestl.contentType">
+            <summary>
+            Loại file
+            </summary>
+        </member>
+        <member name="P:Request.DomainRequests.AppDomainFileRequestl.fileExtension">
+            <summary>
+            Đuôi file
+            </summary>
+        </member>
+        <member name="P:Request.DomainRequests.AppDomainFileRequestl.description">
+            <summary>
+            Mô tả
+            </summary>
+        </member>
+        <member name="P:Request.DomainRequests.AppDomainFileRequestl.fileRandomName">
+            <summary>
+            Tên lưu trong thư mục
+            </summary>
+        </member>
+        <member name="P:Request.DomainRequests.AppDomainFileRequestl.fileUrl">
+            <summary>
+            Link download File
+            </summary>
+        </member>
+        <member name="P:Request.DomainRequests.DomainCreate.Created">
+            <summary>
+            Ngày tạo
+            </summary>
+        </member>
+        <member name="P:Request.DomainRequests.DomainCreate.Deleted">
+            <summary>
+            Cờ xóa
+            </summary>
+        </member>
+        <member name="P:Request.DomainRequests.DomainCreate.Active">
+            <summary>
+            Cờ active
+            </summary>
+        </member>
+        <member name="P:Request.DomainRequests.DomainUpdate.Updated">
+            <summary>
+            Ngày cập nhật
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.BiddingSessionCreate.Name">
+            <summary>
+            Tên phiên đấu thầu
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.BiddingSessionCreate.BiddingId">
+            <summary>
+            id gói thầu
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.BiddingSessionCreate.StartDate">
+            <summary>
+            Thời gian bắt đầu
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.BiddingSessionCreate.EndDate">
+            <summary>
+            Thời gian kết thúc
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.BiddingSessionCreate.MinimumQuantity">
+            <summary>
+            Số lượng tối thiểu
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.BiddingSessionCreate.MaximumQuantity">
+            <summary>
+            Số lượng tối đa
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.BiddingSessionCreate.Description">
+            <summary>
+            Mô tả
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.BiddingTicketCreate.BiddingSessionId">
+            <summary>
+            Phiên đấu thầu
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.BiddingTicketCreate.Quantity">
+            <summary>
+            Số lượng sản phẩm
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.BiddingTicketCreate.Price">
+            <summary>
+            Định giá
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ProviderCreate.Username">
+            <summary>
+            UserName
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ProviderCreate.FullName">
+            <summary>
+            Họ và tên
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ProviderCreate.CompanyName">
+            <summary>
+            Tên công ty
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ProviderCreate.Phone">
+            <summary>
+            Số điện thoại
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ProviderCreate.Email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ProviderCreate.Address">
+            <summary>
+            Địa chỉ
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ProviderCreate.Password">
+            <summary>
+            Mật khẩu người dùng
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ProviderCreate.ConfirmPassword">
+            <summary>
+            Xác nhận mật khẩu
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ProviderCreate.TaxCode">
+            <summary>
+            Mã số thuế
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.ProviderCreate.PersonInCharge">
+            <summary>
+            Nhân viên phụ trách
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.RoleCreate.RoleNumberLevel">
+            <summary>
+            Cấp số role
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.TechnicalProductCreate.ProductId">
+            <summary>
+            Id sản phẩm
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.TechnicalProductCreate.TechnicalValue">
+            <summary>
+            Nội dung kỹ thuật
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.UserCreate.Address">
+            <summary>
+            Địa chỉ
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.UserCreate.Password">
+            <summary>
+            Mật khẩu người dùng
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.UserCreate.FullName">
+            <summary>
+            Họ và tên
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.UserCreate.Gender">
+            <summary>
+            Giới tính
+            0 => Khác
+            1 => Nam
+            2 => Nữ
+            </summary>
+        </member>
+        <member name="P:Request.RequestCreate.UserCreate.Roles">
+            <summary>
+            Danh sách chức vụ của người dùng
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.BiddingSessionUpdate.Name">
+            <summary>
+            Tên phiên đấu thầu
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.BiddingSessionUpdate.BiddingId">
+            <summary>
+            id gói thầu
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.BiddingSessionUpdate.StartDate">
+            <summary>
+            Thời gian bắt đầu
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.BiddingSessionUpdate.EndDate">
+            <summary>
+            Thời gian kết thúc
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.BiddingSessionUpdate.MinimumQuantity">
+            <summary>
+            Số lượng tối thiểu
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.BiddingSessionUpdate.MaximumQuantity">
+            <summary>
+            Số lượng tối đa
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.BiddingSessionUpdate.Description">
+            <summary>
+            Mô tả
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.BiddingTicketUpdate.Status">
+            <summary>
+            Trạng thái kết quả của phiếu
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.NotificationUpdate.IsSeen">
+            <summary>
+            Đã xem
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ProviderUpdate.Username">
+            <summary>
+            UserName
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ProviderUpdate.FullName">
+            <summary>
+            Họ và tên
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ProviderUpdate.CompanyName">
+            <summary>
+            Tên công ty
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ProviderUpdate.Phone">
+            <summary>
+            Số điện thoại
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ProviderUpdate.Email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ProviderUpdate.Address">
+            <summary>
+            Địa chỉ
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ProviderUpdate.Password">
+            <summary>
+            Mật khẩu người dùng
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ProviderUpdate.ConfirmPassword">
+            <summary>
+            Xác nhận mật khẩu
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ProviderUpdate.TaxCode">
+            <summary>
+            Mã số thuế
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ProviderUpdate.PersonInCharge">
+            <summary>
+            Nhân viên phụ trách
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.ProviderUpdate.Active">
+            <summary>
+            Cờ active
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.RoleUpdate.Permissions">
+            <summary>
+            Danh sách chức năng
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.RoleUpdate.MenuList">
+            <summary>
+            Danh sách menu được truy cập (Định dạng Json)
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.RoleUpdate.RoleNumberLevel">
+            <summary>
+            Cấp số role
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.TechnicalProductUpdate.TechnicalValue">
+            <summary>
+            Nội dung kỹ thuật
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.UserUpdate.Address">
+            <summary>
+            Địa chỉ
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.UserUpdate.Password">
+            <summary>
+            Mật khẩu người dùng
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.UserUpdate.FullName">
+            <summary>
+            Họ và tên
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.UserUpdate.Gender">
+            <summary>
+            Giới tính
+            0 => Khác
+            1 => Nam
+            2 => Nữ
+            </summary>
+        </member>
+        <member name="P:Request.RequestUpdate.UserUpdate.Roles">
+            <summary>
+            Danh sách quyền của nhân viên
+            </summary>
+        </member>
+    </members>
+</doc>

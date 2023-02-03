@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BaseAPI</name>
+    </assembly>
+    <members>
+        <member name="M:BaseAPI.Controllers.Auth.AuthController.LoginAsync(Request.Auth.Login)">
+            <summary>
+            Đăng nhập hệ thống web-app ACP
+            </summary>
+            <param name="loginModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.Auth.AuthController.LoginDev(Request.Auth.LoginDev)">
+            <summary>
+            Đăng nhập dev
+            </summary>
+            <param name="loginDevModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.Auth.AuthController.MobileLoginAsync(Request.Auth.Login)">
+            <summary>
+            Đăng nhập hệ thống mobile-app ACP
+            </summary>
+            <param name="loginModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.Auth.AuthController.ChangePassword(System.Guid,Request.Auth.ChangePassword)">
+            <summary>
+            Đổi mật khẩu
+            </summary>
+            <param name="id"></param>
+            <param name="changePasswordModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.Auth.AuthController.ForgotPassword(System.String)">
+            <summary>
+            Quên mật khẩu
+            <para>Gửi mật khẩu mới qua Email</para>
+            </summary>
+            <param name="userName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.Auth.AuthController.Logout">
+            <summary>
+            Đăng xuất
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.Auth.AuthController.RefreshToken">
+            <summary>
+            Làm mới token
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.Auth.AuthController.GenerateJwtToken(Models.UserModel)">
+            <summary>
+            Tạo token từ thông tin user
+            </summary>
+            <param name="user"></param>
+            <param name="loginModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.Auth.AuthController.MobileGenerateJwtToken(Models.ProviderModel)">
+            <summary>
+            Tạo token từ thông tin provider
+            </summary>
+            <param name="provider"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.BaseCatalogueController`5.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin theo id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.BaseCatalogueController`5.AddItem(`2)">
+            <summary>
+            Thêm mới item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.BaseCatalogueController`5.UpdateItem(`3)">
+            <summary>
+            Cập nhật thông tin item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.BaseCatalogueController`5.DeleteItem(System.Guid)">
+            <summary>
+            Xóa item
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.BaseCatalogueController`5.Get(`4)">
+            <summary>
+            Lấy danh sách item phân trang
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.BaseController`5.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin theo id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.BaseController`5.AddItem(`2)">
+            <summary>
+            Thêm mới item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.BaseController`5.UpdateItem(`3)">
+            <summary>
+            Cập nhật thông tin item
+            </summary>
+            <param name="itemModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.BaseController`5.DeleteItem(System.Guid)">
+            <summary>
+            Xóa item
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.BaseController`5.Get(`4)">
+            <summary>
+            Lấy danh sách item phân trang
+            </summary>
+            <param name="baseSearch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.BaseFileController.UploadFile(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Upload Single File
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.BaseFileController.UploadFiles(System.Collections.Generic.List{Microsoft.AspNetCore.Http.IFormFile})">
+            <summary>
+            Upload Multiple File
+            </summary>
+            <param name="files"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseAPI.Controllers.BaseFileController.DeleteFile(System.String)">
+            <summary>
+            Delete File
+            </summary>
+            <param name="fileNameSaveInSystem"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
